@@ -10,6 +10,7 @@ public class DriverD extends Driver{
 
     }
 
+
     @Override
     public void finishMove() {
         System.out.println("Водителеь категории D"+getName()+"закончил движение");

@@ -15,6 +15,7 @@ public class ServiceStation {
         }
         queue.offer(auto);
     }
+
     public  void  carryOutATechnicalInspection(Transport auto){
         for(Transport transport: queue){
             System.out.println("проходим ТО");

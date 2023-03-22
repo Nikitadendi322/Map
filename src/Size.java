@@ -13,6 +13,7 @@ public enum Size {
         this.max = max;
     }
 
+
     Size() {
     }
 
