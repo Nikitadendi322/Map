@@ -12,6 +12,7 @@ public abstract class Transport<T extends Driver> implements Competing {
     private List<Driver> driverList = new ArrayList<>();
 
 
+
     private T driver;
 
     public Transport(String brand, String model, double engineVolume, T driver, List<Mechanic> mechanics) {
@@ -28,12 +29,13 @@ public abstract class Transport<T extends Driver> implements Competing {
         setDriver(driver);
 
     }
+    public void
 
     public void setMechanicList(List<Mechanic> mechanicList) {
         this.mechanicList = mechanicList;
     }
 
-    public List<Mechanic> getMechanicList() {
+    public List<Mechanic>getMechanicList() {
         return mechanicList;
     }
 
@@ -127,5 +129,13 @@ public abstract class Transport<T extends Driver> implements Competing {
         Transport transport=(Transport)o;
         return Objects.equals(brand,transport.brand)&&Objects.equals(model,transport.model)&&Objects.equals(engineVolume,transport.engineVolume)&&Objects.equals(driverList,transport.driverList)&&Objects.equals(mechanicList,transport.mechanicList);
     }
+
+    public void addMechanic(Mechanic mechanic2) {
+        mechanicList.add(mechanic2);
+    }
+    public void addDriver(Driver driver) {
+        driverList.add(driver);
+    }
+
 }
 

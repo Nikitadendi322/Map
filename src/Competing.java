@@ -4,4 +4,5 @@ public interface Competing {
     void circleTime();
 
     void maxSpeed();
+
 }
